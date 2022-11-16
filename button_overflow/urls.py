@@ -23,5 +23,6 @@ urlpatterns = [
     path('ask', views.ask, name='ask'),
     path('question/<int:id>', views.question, name='question'),
     path('register', views.register, name='register'),
-    path('login', views.login, name='login')
+    path('login', views.login, name='login'),
+    path('settings', views.settings, name='settings')
 ]
