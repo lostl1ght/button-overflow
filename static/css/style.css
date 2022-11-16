@@ -53,3 +53,7 @@ hr {
   position: absolute;
   bottom: 0;
 }
+
+.failure {
+  color: red;
+}
