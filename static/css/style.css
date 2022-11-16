@@ -44,3 +44,12 @@ hr {
   margin-top: 5px;
   fill: green;
 }
+
+#parent-tags {
+    position: relative;
+}
+
+#tags {
+  position: absolute;
+  bottom: 0;
+}
