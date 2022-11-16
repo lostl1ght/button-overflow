@@ -22,3 +22,25 @@
   height: 100%;
   object-fit: cover;
 }
+
+.vote-counter {
+  font-size: large;
+}
+
+hr {
+  margin-left: 40;
+  height: 3px;
+  background: black;
+}
+
+.answer {
+  margin-bottom: 20px;
+  border: 1px solid gray;
+  border-radius: 6px;
+  padding: 20px;
+}
+
+.iconCheckmarkLg {
+  margin-top: 5px;
+  fill: green;
+}
