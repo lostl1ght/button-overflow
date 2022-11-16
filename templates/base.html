@@ -1,21 +1,23 @@
 <!DOCTYPE html>
+{% load static %}
+
 <html lang="en" class="h-100">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Button Overflow</title>
 
-    <link href="../static/css/bootstrap.css" rel="stylesheet" />
+    <link href="{% static "css/bootstrap.css" %}" rel="stylesheet" />
 
     <!-- Custom styles for this template -->
-    <link href="../static/css/style.css" rel="stylesheet" />
+    <link href="{% static "css/style.css" %}" rel="stylesheet" />
   </head>
   <body class="d-flex flex-column h-100">
     <header>
       <!-- Fixed navbar -->
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Button Overflow</a>
+            <a class="navbar-brand" href="{% url "index" %}">Button Overflow</a>
           <button
             class="navbar-toggler"
             type="button"
