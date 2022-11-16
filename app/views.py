@@ -10,3 +10,6 @@ def ask(request):
 
 def question(request, id):
     return render(request, 'question.html')
+
+def register(request):
+    return render(request, 'register.html')
