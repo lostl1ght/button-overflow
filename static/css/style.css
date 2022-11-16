@@ -1,24 +1,72 @@
 .container {
-    padding: 60px 15px 0;
+  padding: 60px 15px 0;
 }
 
 .question {
-    margin-bottom: 20px;
-    border: 2px solid gray;
-    border-radius: 6px;
-    padding: 20px;
+  margin-bottom: 20px;
+  border: 2px solid gray;
+  border-radius: 6px;
+  padding: 20px;
 }
 
 .avatar {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    border: 2px solid green;
-    overflow: hidden;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid green;
+  overflow: hidden;
 }
 
 .avatar img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.avatar-nav {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.avatar-nav img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.vote-counter {
+  font-size: large;
+}
+
+hr {
+  margin-left: 40;
+  height: 3px;
+  background: black;
+}
+
+.answer {
+  margin-bottom: 20px;
+  border: 1px solid gray;
+  border-radius: 6px;
+  padding: 20px;
+}
+
+.iconCheckmarkLg {
+  margin-top: 5px;
+  fill: green;
+}
+
+#parent-tags {
+    position: relative;
+}
+
+#tags {
+  position: absolute;
+  bottom: 0;
+}
+
+.failure {
+  color: red;
 }

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Button Overflow</title>
+
+    <link href="../static/css/bootstrap.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="../static/css/style.css" rel="stylesheet" />
+  </head>
+  <body class="d-flex flex-column h-100">
+    <header>
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Button Overflow</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+            </form>
+            <a class="btn btn-outline-primary" role="button" href="#">
+              New question
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Log in</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Register</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </body>
+
+  <!-- Begin page content -->
+  <main class="flex-shrink-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-8">
+          <h1>Question 1</h1>
+          <div class="row">
+            <div class="col-1">
+              <div class="voting-container text-center">
+                <button type="button" class="btn btn-outline-success">
+                  <svg
+                    aria-hidden="true"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 36 36"
+                  >
+                    <path d="M2 25h32L18 9 2 25Z"></path>
+                  </svg>
+                </button>
+                <div class="vote-counter" itemprop="upvoteCount" data-value="2">
+                  2
+                </div>
+                <button type="button" class="btn btn-outline-danger">
+                  <svg
+                    aria-hidden="true"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 36 36"
+                  >
+                    <path d="M2 11h32L18 27 2 11Z"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="avatar">
+                <img src="../static/img/avatar-1.jpg" alt="" />
+              </div>
+            </div>
+            <div class="col-9" id="parent-tags">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam,
+              exercitationem.
+
+              <div id="tags">
+                Tags:
+                <a href="#">rust btw</a>
+                <a href="#">crabs</a>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="answer">
+            <div class="row">
+              <div class="col-1">
+                <div class="voting-container text-center">
+                  <button type="button" class="btn btn-outline-success">
+                    <svg
+                      aria-hidden="true"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 36 36"
+                    >
+                      <path d="M2 25h32L18 9 2 25Z"></path>
+                    </svg>
+                  </button>
+                  <div
+                    class="vote-counter"
+                    itemprop="upvoteCount"
+                    data-value="2"
+                  >
+                    20
+                  </div>
+                  <button type="button" class="btn btn-outline-danger">
+                    <svg
+                      aria-hidden="true"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 36 36"
+                    >
+                      <path d="M2 11h32L18 27 2 11Z"></path>
+                    </svg>
+                  </button>
+                  <svg
+                    aria-hidden="true"
+                    class="svg-icon iconCheckmarkLg"
+                    width="36"
+                    height="36"
+                    viewBox="0 0 36 36"
+                  >
+                    <path d="m6 14 8 8L30 6v8L14 30l-8-8v-8Z"></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="avatar">
+                  <img src="../static/img/avatar-1.jpg" alt="" />
+                </div>
+              </div>
+              <div class="col-9">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
+                voluptas, alias recusandae officiis obcaecati iusto! Labore
+                quibusdam recusandae fugiat, quos alias eligendi, pariatur sunt
+                ullam aliquid modi blanditiis, neque voluptas.
+              </div>
+            </div>
+          </div>
+
+          <div class="answer">
+            <div class="row">
+              <div class="col-1">
+                <div class="voting-container text-center">
+                  <button type="button" class="btn btn-outline-success">
+                    <svg
+                      aria-hidden="true"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 36 36"
+                    >
+                      <path d="M2 25h32L18 9 2 25Z"></path>
+                    </svg>
+                  </button>
+                  <div
+                    class="vote-counter"
+                    itemprop="upvoteCount"
+                    data-value="2"
+                  >
+                    2
+                  </div>
+                  <button type="button" class="btn btn-outline-danger">
+                    <svg
+                      aria-hidden="true"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 36 36"
+                    >
+                      <path d="M2 11h32L18 27 2 11Z"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="avatar">
+                  <img src="../static/img/avatar-1.jpg" alt="" />
+                </div>
+              </div>
+              <div class="col-9">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Obcaecati sequi eius tempora cum nam esse unde minima vitae
+                officia magni?
+              </div>
+            </div>
+          </div>
+          <div class="answer">
+            <div class="row">
+              <div class="col-1">
+                <div class="voting-container text-center">
+                  <button type="button" class="btn btn-outline-success">
+                    <svg
+                      aria-hidden="true"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 36 36"
+                    >
+                      <path d="M2 25h32L18 9 2 25Z"></path>
+                    </svg>
+                  </button>
+                  <div
+                    class="vote-counter"
+                    itemprop="upvoteCount"
+                    data-value="2"
+                  >
+                    2
+                  </div>
+                  <button type="button" class="btn btn-outline-danger">
+                    <svg
+                      aria-hidden="true"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 36 36"
+                    >
+                      <path d="M2 11h32L18 27 2 11Z"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="avatar">
+                  <img src="../static/img/avatar-1.jpg" alt="" />
+                </div>
+              </div>
+              <div class="col-9">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+                ipsum eum inventore, nesciunt aperiam esse quo molestias
+                perferendis qui reiciendis porro voluptates itaque laboriosam
+                fugiat magni sunt dolor tempora error! Commodi temporibus
+                repellendus rem facilis dignissimos voluptatum sit veniam
+                corrupti?
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-1"></div>
+        <div class="col-3">
+          <h3>Popular Tags</h3>
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action">
+              get some sleep
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              rust btw
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              gopher
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              crabs
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              jizz mopper
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Paginator -->
+  <footer class="footer mt-auto py-3 bg-light">
+    <div class="container">
+      <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item disabled">
+            <a class="page-link" href="#">Previous</a>
+          </li>
+          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</html>
