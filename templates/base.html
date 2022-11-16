@@ -18,18 +18,7 @@
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="{% url "index" %}">Button Overflow</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarCollapse"
-            aria-controls="navbarCollapse"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="collapse navbar-collapse" id="navbarCollapse">
             <form class="d-flex" role="search">
               <input
                 class="form-control me-2"
@@ -43,7 +32,7 @@
             </a>
           </div>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-              {% include "logged.html" %}
+              {% include "notlogged.html" %}
           </div>
         </div>
       </nav>
