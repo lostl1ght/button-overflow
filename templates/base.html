@@ -36,7 +36,7 @@
                 aria-label="Search"
               />
             </form>
-            <a class="btn btn-outline-primary" role="button" href="#">
+            <a class="btn btn-outline-primary" role="button" href="{% url "ask" %}">
               New question
             </a>
           </div>
@@ -58,7 +58,10 @@
     <main class="flex-shrink-0">
       <div class="container">
         <div class="row">
-          <div class="col-8"></div>
+          <div class="col-8">
+              {% block content %}
+              {% endblock %}
+          </div>
 
           <div class="col-1"></div>
           <div class="col-3">
@@ -85,4 +88,5 @@
       </div>
     </main>
   </body>
+
 </html>

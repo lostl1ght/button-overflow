@@ -1,229 +1,113 @@
-<!DOCTYPE html>
-<html lang="en" class="h-100">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Button Overflow</title>
+{% extends "base.html" %} {% load static %} {% block content %}
 
-    <link href="../static/css/bootstrap.css" rel="stylesheet" />
-
-    <!-- Custom styles for this template -->
-    <link href="../static/css/style.css" rel="stylesheet" />
-  </head>
-  <body class="d-flex flex-column h-100">
-    <header>
-      <!-- Fixed navbar -->
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Button Overflow</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarCollapse"
-            aria-controls="navbarCollapse"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+<h1>New Questions</h1>
+<div class="question">
+  <div class="row">
+    <div class="col-1">
+      <div class="voting-container text-center">
+        <button type="button" class="btn btn-outline-success">
+          <svg
+            aria-hidden="true"
+            class="svg-icon iconArrowUpLg"
+            width="16"
+            height="16"
+            viewBox="0 0 36 36"
           >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-            </form>
-            <a class="btn btn-outline-primary" role="button" href="#">
-              New question
-            </a>
-          </div>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav ms-auto mb-2 mb-md-0">
-              <li class="nav-item avatar-nav">
-                  <img src="../static/img/avatar-1.jpg" alt="" />
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Settings</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Log out</a>
-              </li>
-            </ul>
+            <path d="M2 25h32L18 9 2 25Z"></path>
+          </svg>
+        </button>
+        <div class="vote-counter" itemprop="upvoteCount" data-value="2">2</div>
+        <button type="button" class="btn btn-outline-danger">
+          <svg
+            aria-hidden="true"
+            class="svg-icon iconArrowDownLg"
+            width="16"
+            height="16"
+            viewBox="0 0 36 36"
+          >
+            <path d="M2 11h32L18 27 2 11Z"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="col-2">
+      <div class="avatar">
+        <img src="{% static "img/avatar-1.jpg" %}" alt="" />
+      </div>
+    </div>
+    <div class="col-9">
+      <h2 class="question-title">Question 1</h2>
+      <div class="question-text">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam,
+        exercitationem.
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <div class="answer-count">
+            <a href="#">answers (3)</a>
           </div>
         </div>
-      </nav>
-    </header>
-
-    <!-- Begin page content -->
-    <main class="flex-shrink-0">
-      <div class="container">
-        <h1>New questions</h1>
-        <div class="row">
-          <div class="col-8">
-            <div class="question">
-              <div class="row">
-                <div class="col-1">
-                  <div class="voting-container text-center">
-                    <button type="button" class="btn btn-outline-success">
-                      <svg
-                        aria-hidden="true"
-                        class="svg-icon iconArrowUpLg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 36 36"
-                      >
-                        <path d="M2 25h32L18 9 2 25Z"></path>
-                      </svg>
-                    </button>
-                    <div
-                      class="vote-counter"
-                      itemprop="upvoteCount"
-                      data-value="2"
-                    >
-                      2
-                    </div>
-                    <button type="button" class="btn btn-outline-danger">
-                      <svg
-                        aria-hidden="true"
-                        class="svg-icon iconArrowDownLg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 36 36"
-                      >
-                        <path d="M2 11h32L18 27 2 11Z"></path>
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-                <div class="col-2">
-                  <div class="avatar">
-                    <img src="../static/img/avatar-1.jpg" alt="" />
-                  </div>
-                </div>
-                <div class="col-9">
-                  <h2 class="question-title">Question 1</h2>
-                  <div class="question-text">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Ullam, exercitationem.
-                  </div>
-                  <div class="row">
-                    <div class="col-4">
-                      <div class="answer-count">
-                        <a href="#">answers (3)</a>
-                      </div>
-                    </div>
-                    <div class="col-8">
-                      Tags: <a href="#">rust btw</a> <a href="#">crabs</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="question">
-              <div class="row">
-                <div class="col-1">
-                  <div class="voting-container text-center">
-                    <button type="button" class="btn btn-outline-success">
-                      <svg
-                        aria-hidden="true"
-                        class="svg-icon iconArrowUpLg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 36 36"
-                      >
-                        <path d="M2 25h32L18 9 2 25Z"></path>
-                      </svg>
-                    </button>
-                    <div
-                      class="vote-counter"
-                      itemprop="upvoteCount"
-                      data-value="1"
-                    >
-                      1
-                    </div>
-                    <button type="button" class="btn btn-outline-danger">
-                      <svg
-                        aria-hidden="true"
-                        class="svg-icon iconArrowDownLg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 36 36"
-                      >
-                        <path d="M2 11h32L18 27 2 11Z"></path>
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-
-                <div class="col-2">
-                  <div class="avatar">
-                    <img src="../static/img/avatar-2.jpg" alt="" />
-                  </div>
-                </div>
-                <div class="col-9">
-                  <h2 class="question-title">Question 2</h2>
-                  <div class="question-text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Minus recusandae, itaque totam illo laudantium sequi.
-                  </div>
-                  <div class="row">
-                    <div class="col-4">
-                      <div class="answer-count">
-                        <a href="#">answers (3)</a>
-                      </div>
-                    </div>
-                    <div class="col-8">
-                      Tags: <a href="#">gopher</a>
-                      <a href="#">get some sleep</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-1"></div>
-          <div class="col-3">
-            <h3>Popular Tags</h3>
-            <div class="list-group">
-              <a href="#" class="list-group-item list-group-item-action">
-                get some sleep
-              </a>
-              <a href="#" class="list-group-item list-group-item-action">
-                rust btw
-              </a>
-              <a href="#" class="list-group-item list-group-item-action">
-                gopher
-              </a>
-              <a href="#" class="list-group-item list-group-item-action">
-                crabs
-              </a>
-              <a href="#" class="list-group-item list-group-item-action">
-                jizz mopper
-              </a>
-            </div>
-          </div>
+        <div class="col-8">
+          Tags: <a href="#">rust btw</a> <a href="#">crabs</a>
         </div>
       </div>
-    </main>
-  </body>
-
-  <!-- Paginator -->
-  <footer class="footer mt-auto py-3 bg-light">
-    <div class="container">
-      <nav aria-label="Page navigation example">
-        <ul class="pagination">
-          <li class="page-item disabled">
-            <a class="page-link" href="#">Previous</a>
-          </li>
-          <li class="page-item active"><a class="page-link" href="#">1</a></li>
-          <li class="page-item"><a class="page-link" href="#">2</a></li>
-          <li class="page-item"><a class="page-link" href="#">3</a></li>
-          <li class="page-item"><a class="page-link" href="#">Next</a></li>
-        </ul>
-      </nav>
     </div>
-  </footer>
-</html>
+  </div>
+</div>
+<div class="question">
+  <div class="row">
+    <div class="col-1">
+      <div class="voting-container text-center">
+        <button type="button" class="btn btn-outline-success">
+          <svg
+            aria-hidden="true"
+            class="svg-icon iconArrowUpLg"
+            width="16"
+            height="16"
+            viewBox="0 0 36 36"
+          >
+            <path d="M2 25h32L18 9 2 25Z"></path>
+          </svg>
+        </button>
+        <div class="vote-counter" itemprop="upvoteCount" data-value="1">1</div>
+        <button type="button" class="btn btn-outline-danger">
+          <svg
+            aria-hidden="true"
+            class="svg-icon iconArrowDownLg"
+            width="16"
+            height="16"
+            viewBox="0 0 36 36"
+          >
+            <path d="M2 11h32L18 27 2 11Z"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="col-2">
+      <div class="avatar">
+        <img src="{% static "img/avatar-2.jpg" %}" alt="" />
+      </div>
+    </div>
+    <div class="col-9">
+      <h2 class="question-title">Question 2</h2>
+      <div class="question-text">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus
+        recusandae, itaque totam illo laudantium sequi.
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <div class="answer-count">
+            <a href="#">answers (3)</a>
+          </div>
+        </div>
+        <div class="col-8">
+          Tags: <a href="#">gopher</a>
+          <a href="#">get some sleep</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% include "paginator.html" %} {% endblock %}
